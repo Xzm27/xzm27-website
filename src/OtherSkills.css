@@ -1,0 +1,73 @@
+.otherSkills{
+    margin-left: 9%;
+    margin-bottom: 50px;
+}
+/* .otherSkills>h2{
+    color: #88d1e9;
+} */
+.otherSkills__in{
+    display: flex;
+    border-left: 2px solid #e0f80b;
+}
+.otherSkills__in>img{
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 0.2;
+    height: 230px;
+    flex: 0.2;
+    padding: 0 25px;
+}
+.otherSkills__hobby{
+    flex: 0.8;
+    padding: 0 30px;
+}
+.otherSkills__hobby>h4{
+    color: #e0f80b;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width:1150px){
+    .otherSkills{
+        margin-right: 9%;
+    }
+    .music>img{
+        display: none;
+    }
+    .otherSkills__hobby{
+        flex: 0.8;
+    }
+}
+@media screen and (max-width:650px){
+    .otherSkills{
+        margin: 10px;
+    }
+    .otherSkills>h2::after{
+        display: block;
+        content: " ";
+        height: 3px;
+        width: 40px;
+        background-color: yellow;
+        margin-top: 5px;
+    }
+    .otherSkills__in{
+        border-left: none;
+        flex-direction: column;
+    }
+    
+    .otherSkills__hobby{
+        flex: 1;
+        margin-right: 0;
+    }
+    .otherSkills__in>img{
+        flex: 1;
+        height: 50px;
+        width: 50%;
+        align-self: center;
+    }
+    .otherSkills__hobby{
+        flex: 1;
+        padding: 0;
+    }
+}

@@ -1,0 +1,135 @@
+.contact{
+    flex: 0.9;
+    color: white;
+    height: 100vh;
+}
+.contact__title{
+    text-align: center;
+    padding: 10px;
+    font-size: 48px;
+    color: #e0f80b;
+}
+.contact__in{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.services{  
+    flex: 0.5;
+    padding: 10px 50px;
+    margin-right: 20px; 
+    align-content: center;
+}
+.__title{
+    font-size: 30px;
+}
+.mycontact{
+    flex: 0.5;
+    padding: 10px 50px;
+    font-size: 20px;
+}
+.ico__text{
+    height: 80px;
+    display: flex;
+    margin-left: 100px;
+}
+.btn-btn{
+    background-color: #252827;
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+    border-radius: 50%;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.gg2{
+    color: black;
+    background-color: #e0f80b;
+}
+.btn-btn:hover{
+    background-color: #e0f80b;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+.followme{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.icos{
+    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.ico__in{
+    height: 30px !important;
+    width: 30px !important;
+}
+@media screen and (max-width:1150px){
+    .contact{
+        flex: 1;
+        margin: 0 5px;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+    .contact__in{
+        flex-direction: column;
+        width: 100%;
+    }
+    .mycontact{
+        flex: 1;
+        margin: 0 auto;
+    }
+    .services{
+        flex: 1;
+        margin: 0 auto;
+    }
+    .btn-btn:hover{
+        background-color: #252827;
+        color: white;
+        transition: none;
+    }
+    .ico__text{
+        margin: 0;
+    }
+    .icos{
+        margin: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .contact{
+        overflow-x: hidden;
+    }
+    .contact__in{
+        margin: 0 ;
+    }
+    .btn-btn{
+        margin: 0 8px;
+        margin-top: 10px;
+    }
+    .mn{
+        margin-right: 0;
+    }
+    .mycontact{
+        flex: 1;
+        margin: 0 ;
+        padding: 0;
+    }
+    .ico__text{
+        justify-content: center;
+    }
+    .services{
+        flex: 1;
+        margin: 0 ;
+        padding: 0;
+    }
+}

@@ -1,0 +1,98 @@
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+.navbar{
+    color: white;
+    flex: 0.1;
+    /* margin-right:5vw; */
+    height: 100vh;
+}
+.container{
+    display : flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    margin-top: 30vh;
+}
+.btn2{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    display: none;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+.wrap{
+    position: relative;
+    display: block;
+    height: 8vh;
+    width: 100px;
+}
+.btn__full{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn__full>h4{
+    
+    display: none;
+    align-self: center;
+}
+.btn__full:hover>h4{
+    display: block;
+    padding-left: 10px;
+}
+.btn__full:hover{
+    background-color: yellow;
+    width: 120px;
+    border-radius: 50px;
+    color: black;
+    transition: width 0.8s;
+}
+.btn__full:hover>.btn{
+    color: black;
+    border: 1px solid yellow;
+    background-color:yellow;
+}
+.btn{
+    height: 48px;
+    width: 48px;
+    outline: none;
+    border: none;
+    border-radius: 50%; 
+    background-color:#252827;
+    color: white;
+    align-content: center;
+    cursor: pointer;
+}
+.active{
+    background-color:yellow;
+}
+.active>.btn{
+    color: black;
+    background-color: yellow;
+}
+
+
+
+@media screen and (max-width: 1160px){
+    .navbar{
+        height: 10vh;
+    }
+    .container{
+        display : none;
+    }
+    .btn2{
+        display: flex;
+    }
+}

@@ -1,0 +1,43 @@
+.personalInfo{
+    flex: 0.8;
+    margin-left: 9%;
+}
+
+.row{
+    display: flex;
+    border-left: 2px solid #e0f80b;
+}
+.col{
+    flex: 0.5;
+    padding: 0 25px;
+    padding-right: 0;
+}
+@media screen and (max-width: 1310px){
+    .personalInfo{
+        flex: 1;
+        margin-right: 9%;
+    }
+}
+@media screen and (max-width:650px){
+    .personalInfo{
+        flex: 1;
+        margin: 0 10px;
+    }
+    .row{
+        border: none;
+    }
+    .col{
+        padding: 0;
+    }
+    .col >p>  span{
+        display: block;  
+    }
+    .personalInfo>h2::after{
+        display: block;
+        content: " ";
+        height: 3px;
+        width: 40px;
+        background-color: yellow;
+        margin-top: 5px;
+    }
+}
